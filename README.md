@@ -1,9 +1,6 @@
 # resource-stress
 
-A standalone, dependency-free Python 3 script that continuously loads CPU,
-memory, disk I/O, and network on a host — useful for testing how a VPS or
-PaaS platform behaves under sustained resource usage (e.g. verifying that
-idle/low-resource auto-sleep detection does *not* trigger).
+A dependency-free Python 3 utility engineered to generate sustained, multi-vector synthetic load — encompassing computational (multi-process CPU saturation), resident memory allocation, block-level disk I/O, and outbound network traffic — against a target host, for the empirical validation of platform-level idle-detection heuristics and the verification that auto-suspend mechanisms remain unlatched under conditions of continuous, non-trivial resource utilization.
 
 ## What it does
 
